@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday To You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2e1f8;
+            font-family: sans-serif;
+            overflow: hidden;
+        }
+
+        .birthday-message {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #fff;
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            font-size: 2rem;
+            color: #8345E6;
+        }
+
+        .emojis {
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        .floating-emoji {
+            position: absolute;
+            font-size: 3rem;
+            animation: float 10s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+
+            10%,
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        .emoji-t {
+            position: absolute;
+            font-size: 3rem;
+            animation: float-1 10s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes float-1 {
+
+            0%,
+            100% {
+                transform: translateY(-40vh);
+                opacity: 0;
+            }
+
+            10%,
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        .floating-emoji-2 {
+            position: absolute;
+            font-size: 3rem;
+            animation: float-2 10s linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes float-2 {
+
+            0%,
+            100% {
+                transform: translateY(-5vh);
+                opacity: 0;
+            }
+
+            10%,
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        /* Randomized sizes and delays for more natural effect */
+        .emoji {
+            left: 10%;
+            animation-delay: 0s;
+            animation-duration: 8s;
+        }
+
+        .emoji-t {
+            left: 30%;
+            animation-delay: 1s;
+            animation-duration: 11s;
+        }
+
+        .emoji-1 {
+            left: 50%;
+            animation-delay: 2s;
+            animation-duration: 10s;
+        }
+
+        .emoji-2 {
+            left: 70%;
+            animation-delay: 0.5s;
+            animation-duration: 9s;
+        }
+
+        .emoji-3 {
+            left: 90%;
+            animation-delay: 1s;
+            animation-duration: 12s;
+        }
+
+        .emoji-t1 {
+            left: 20%;
+            animation-delay: 3s;
+            animation-duration: 13s;
+        }
+
+        .emoji-t2 {
+            left: 40%;
+            animation-delay: 3s;
+            animation-duration: 7s;
+        }
+
+        .emoji-t3 {
+            left: 60%;
+            animation-delay: 2s;
+            animation-duration: 14s;
+        }
+
+        .emoji-t4 {
+            left: 80%;
+            animation-delay: 0.5s;
+            animation-duration: 8s;
+        }
+
+        .emoji-t5 {
+            left: 25%;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .emoji-t6 {
+            left: 45%;
+            animation-delay: 0.5s;
+            animation-duration: 8s;
+        }
+
+        .emoji-t7 {
+            left: 55%;
+            animation-delay: 0s;
+            animation-duration: 12s;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="font-sans bg-[#f2e1f8] flex justify-center items-center h-screen m-0 overflow-hidden ]">
+        <section class="">
+            <div class="birthday rounded-[5px] shadow shadow-[#8345E6">
+                <div class="birthday-message">
+                    🎉 Happy Birthday to You, Limlang 🎂,
+                    <div>Wish you all the best 💕</div>
+                    <div class="emojis">🎈🎁🎊</div>
+                </div>
+
+                <!-- top -->
+                <div class="floating-emoji emoji-t emoji-t1">❤️</div>
+                <div class="floating-emoji emoji-t emoji-t2">❤️</div>
+                <div class="floating-emoji emoji-t emoji-t3">❤️</div>
+                <div class="floating-emoji emoji-t emoji-t4">❤️</div>
+                <div class="floating-emoji emoji-t emoji-t5">❤️</div>
+                <div class="floating-emoji emoji-t emoji-t6">❤️</div>
+                <div class="floating-emoji emoji-t emoji-t7">❤️</div>
+
+                <!-- More emojis for diversity -->
+                <div class="floating-emoji emoji emoji-1">🎉</div>
+                <div class="floating-emoji emoji emoji-2">🎂</div>
+                <div class="floating-emoji emoji emoji-3">🎁</div>
+                <div class="floating-emoji emoji emoji-4">🎈</div>
+                <div class="floating-emoji emoji emoji-5">🎊</div>
+                <div class="floating-emoji emoji emoji-6">💖</div>
+                <div class="floating-emoji emoji emoji-7">🍾</div>
+                <div class="floating-emoji emoji emoji-8">🍰</div>
+                <div class="floating-emoji emoji emoji-9">🍬</div>
+                <div class="floating-emoji emoji emoji-10">🎵</div>
+                <div class="floating-emoji emoji emoji-11">💕</div>
+                <div class="floating-emoji emoji emoji-12">🎶</div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
